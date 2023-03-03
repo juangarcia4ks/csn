@@ -1,18 +1,9 @@
 <?php
-
-  /*
-    En ocasiones el usuario puede volver al login
-    aun si ya existe una sesion iniciada, lo correcto
-    es no mostrar otra ves el login sino redireccionarlo
-    a su pagina principal mientras exista una sesion entonces
-    creamos un archivo que controle el redireccionamiento
-  */
-
   session_start();
 
-  // isset verifica si existe una variable o eso creo xd
-  if(isset($_SESSION['id'])){
-    header('location: controller/redirec.php');
+  // Validamos que exista una session y ademas que el cargo que exista sea igual a 1 (Administrador)
+  if(!isset($_SESSION['cargo']) || $_SESSION['cargo'] != 2){
+    header('location: ../../index.php');
   }
 
 ?>
@@ -103,31 +94,31 @@
 					<!-- Contenedor para las tarjetas de películas -->
 					<div class="cards">
 						<!-- Tarjeta de una película -->
-						<a href="https://app12-csn.apps.oc.4ks.global"><div class="card" data-text="APP6-PROD">
+						<a href="https://app11-csn.apps.oc.4ks.global"><div class="card" data-text="APP6-PROD">
 							<img src="img/bollywoodMovies/csn.png" alt="" />
 						</div></a>
 						<!-- Tarjeta de una película -->
-						<a href="https://app12-csn.apps.oc.4ks.global"><div class="card" data-text="APP6-PROD">
+						<a href="https://app11-csn.apps.oc.4ks.global"><div class="card" data-text="APP6-PROD">
 							<img src="img/bollywoodMovies/csn.png" alt="" />
 						</div></a>
 						<!-- Tarjeta de una película -->
-						<a href="https://app12-csn.apps.oc.4ks.global"><div class="card" data-text="APP6-PROD">
+						<a href="https://app11-csn.apps.oc.4ks.global"><div class="card" data-text="APP6-PROD">
 							<img src="img/bollywoodMovies/csn.png" alt="" />
 						</div></a>
 						<!-- Tarjeta de una película -->
-						<a href="https://app12-csn.apps.oc.4ks.global"><div class="card" data-text="APP6-PROD">
+						<a href="https://app11-csn.apps.oc.4ks.global"><div class="card" data-text="APP6-PROD">
 							<img src="img/bollywoodMovies/csn.png" alt="" />
 						</div></a>
 						<!-- Tarjeta de una película -->
-						<a href="https://app12-csn.apps.oc.4ks.global"><div class="card" data-text="APP6-PROD">
+						<a href="https://app11-csn.apps.oc.4ks.global"><div class="card" data-text="APP6-PROD">
 							<img src="img/bollywoodMovies/csn.png" alt="" />
 						</div></a>
 						<!-- Tarjeta de una película -->
-						<a href="https://app12-csn.apps.oc.4ks.global"><div class="card" data-text="APP6-PROD">
+						<a href="https://app11-csn.apps.oc.4ks.global"><div class="card" data-text="APP6-PROD">
 							<img src="img/bollywoodMovies/csn.png" alt="" />
 						</div></a>
 						<!-- Tarjeta de una película -->
-						<a href="https://app12-csn.apps.oc.4ks.global"><div class="card" data-text="APP6-PROD">
+						<a href="https://app11-csn.apps.oc.4ks.global"><div class="card" data-text="APP6-PROD">
 							<img src="img/bollywoodMovies/csn.png" alt="" />
 						</div></a>
 					</div>
@@ -139,31 +130,31 @@
 					<!-- Contenedor para las tarjetas de películas -->
 					<div class="cards">
 						<!-- Tarjeta de una película -->
-						<a href="https://app12-csn.apps.oc.4ks.global"><div class="card" data-text="APP1-TEST">
+						<a href="https://app11-csn.apps.oc.4ks.global"><div class="card" data-text="APP1-TEST">
 							<img src="img/bollywoodMovies/csn.png" alt="" />
 						</div></a>
 						<!-- Tarjeta de una película -->
-						<a href="https://app12-csn.apps.oc.4ks.global"><div class="card" data-text="APP2-TEST">
+						<a href="https://app11-csn.apps.oc.4ks.global"><div class="card" data-text="APP2-TEST">
 							<img src="img/bollywoodMovies/csn.png" alt="" />
 						</div></a>
 						<!-- Tarjeta de una película -->
-						<a href="https://app12-csn.apps.oc.4ks.global"><div class="card" data-text="APP3-TEST">
+						<a href="https://app11-csn.apps.oc.4ks.global"><div class="card" data-text="APP3-TEST">
 							<img src="img/bollywoodMovies/csn.png" alt="" />
 						</div></a>
 						<!-- Tarjeta de una película -->
-						<a href="https://app12-csn.apps.oc.4ks.global"><div class="card" data-text="APP4-TEST">
+						<a href="https://app11-csn.apps.oc.4ks.global"><div class="card" data-text="APP4-TEST">
 							<img src="img/bollywoodMovies/csn.png" alt="" />
 						</div></a>
 						<!-- Tarjeta de una película -->
-						<a href="https://app12-csn.apps.oc.4ks.global"><div class="card" data-text="APP5-TEST">
+						<a href="https://app11-csn.apps.oc.4ks.global"><div class="card" data-text="APP5-TEST">
 							<img src="img/bollywoodMovies/csn.png" alt="" />
 						</div></a>
 						<!-- Tarjeta de una película -->
-						<a href="https://app12-csn.apps.oc.4ks.global"><div class="card" data-text="APP6-TEST">
+						<a href="https://app11-csn.apps.oc.4ks.global"><div class="card" data-text="APP6-TEST">
 							<img src="img/bollywoodMovies/csn.png" alt="" />
 						</div></a>
 						<!-- Tarjeta de una película -->
-						<a href="https://app12-csn.apps.oc.4ks.global"><div class="card" data-text="APP7-TEST">
+						<a href="https://app11-csn.apps.oc.4ks.global"><div class="card" data-text="APP7-TEST">
 							<img src="img/bollywoodMovies/csn.png" alt="" />
 						</div></a>
 					</div>
@@ -175,19 +166,19 @@
 					<!-- Contenedor para las tarjetas de películas -->
 					<div class="cards">
 						<!-- Tarjeta de una película -->
-						<a href="https://app12-csn.apps.oc.4ks.global"><div class="card" data-text="APP1-DEV">
+						<a href="https://app11-csn.apps.oc.4ks.global"><div class="card" data-text="APP1-DEV">
 							<img src="img/bollywoodMovies/csn.png" alt="" />
 						</div></a>
 						<!-- Tarjeta de una película -->
-						<a href="https://app12-csn.apps.oc.4ks.global"><div class="card" data-text="APP2-DEV">
+						<a href="https://app11-csn.apps.oc.4ks.global"><div class="card" data-text="APP2-DEV">
 							<img src="img/bollywoodMovies/csn.png" alt="" />
 						</div></a>
 						<!-- Tarjeta de una película -->
-						<a href="https://app12-csn.apps.oc.4ks.global"><div class="card" data-text="APP3-DEV">
+						<a href="https://app11-csn.apps.oc.4ks.global"><div class="card" data-text="APP3-DEV">
 							<img src="img/bollywoodMovies/csn.png" alt="" />
 						</div></a>
 						<!-- Tarjeta de una película -->
-						<a href="https://app12-csn.apps.oc.4ks.global"><div class="card" data-text="APP4-DEV">
+						<a href="https://app11-csn.apps.oc.4ks.global"><div class="card" data-text="APP4-DEV">
 							<img src="img/bollywoodMovies/csn.png" alt="" />
 						</div></a>
 					</div>
