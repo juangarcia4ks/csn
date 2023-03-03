@@ -12,7 +12,7 @@
 
   // isset verifica si existe una variable o eso creo xd
   if(isset($_SESSION['id'])){
-    header('location: https://csn.4ks.global/controller/redirec.php');
+    header('location: controller/redirec.php');
   }
 
 ?>
