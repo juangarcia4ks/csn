@@ -8,9 +8,9 @@
         # Atributos de la clase conexion
         private $mysqli = '';
         private $usuario = 'root';
-        private $clave = 'eWTPWNEmXNbmXmbb';
-        private $server = 'mysql.csn.svc.cluster.local';
-        private $db = '22';
+        private $clave = '';
+        private $server = 'localhost';
+        private $db = 'sampledb';
 
         # Funcion que permite conectarnos a la base de datos
         public function conectar()
