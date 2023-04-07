@@ -39,7 +39,7 @@ CREATE TABLE `usuarios` (
 --
 
 INSERT INTO `usuarios` (`id`, `nombre`, `email`, `clave`, `cargo`) VALUES
-(1, 'michael yara', 'codigoadsi@gmail.com', '202cb962ac59075b964b07152d234b70', '1');
+(1, 'michael yara', 'admin@4ks.global', '202cb962ac59075b964b07152d234b70', '1');
 
 --
 -- Índices para tablas volcadas
